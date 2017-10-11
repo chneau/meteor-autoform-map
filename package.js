@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'roshdy:autoform-map',
+  name: 'artemi:autoform-map',
   summary: 'Edit location coordinates with autoForm',
-  version: '2.1.7',
-  git: 'https://github.com/Roshdy/meteor-autoform-map'
+  version: '2.1.8',
+  git: 'https://github.com/urnix/meteor-autoform-map'
 });
 
 Package.onUse(function(api) {
@@ -12,7 +12,7 @@ Package.onUse(function(api) {
   	'coffeescript',
   	'templating',
     'reactive-var',
-  	'aldeed:autoform@5.8.1'
+  	'aldeed:autoform@6.2.0'
   ], 'client');
 
   api.imply([
