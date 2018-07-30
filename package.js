@@ -1,18 +1,18 @@
 Package.describe({
-  name: 'artemi:autoform-map',
+  name: 'chneau:autoform-map',
   summary: 'Edit location coordinates with autoForm',
   version: '2.1.8',
-  git: 'https://github.com/urnix/meteor-autoform-map'
+  git: 'https://github.com/chneau/meteor-autoform-map'
 });
 
-Package.onUse(function(api) {
+Package.onUse(function (api) {
   api.versionsFrom('METEOR@1.4');
 
   api.use([
-  	'coffeescript',
-  	'templating',
+    'coffeescript@2.2.1_1',
+    'templating',
     'reactive-var',
-  	'aldeed:autoform@6.2.0'
+    'aldeed:autoform@6.3.0'
   ], 'client');
 
   api.imply([
@@ -20,8 +20,8 @@ Package.onUse(function(api) {
   ], 'client');
 
   api.addFiles([
-  	'lib/client/autoform-map.html',
+    'lib/client/autoform-map.html',
     'lib/client/autoform-map.css',
-  	'lib/client/autoform-map.coffee'
+    'lib/client/autoform-map.coffee'
   ], 'client');
 });
